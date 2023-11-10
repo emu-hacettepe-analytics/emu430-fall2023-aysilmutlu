@@ -2,9 +2,10 @@
 title: "About Me"
 sidebar: false 
 ---
-# CV
+## CV
 
 [Click here to view](Ayşıl Mutlu - cv.pdf)
+
 # Education
 
 -   B.S., Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing.
