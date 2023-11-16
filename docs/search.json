@@ -68,5 +68,19 @@
     "title": "About Me",
     "section": "",
     "text": "Click here to view"
+  },
+  {
+    "objectID": "about.html#resume",
+    "href": "about.html#resume",
+    "title": "About Me",
+    "section": "",
+    "text": "Click here to view"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nBachelor’s Degree, Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing."
   }
 ]

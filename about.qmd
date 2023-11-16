@@ -2,22 +2,16 @@
 title: "About Me"
 sidebar: false 
 ---
-# CV
+## Resume
 
 [Click here to view](Ayşıl Mutlu - cv.pdf)
 
 
-# Education
+## Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing.
+-   Bachelor's Degree, Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing.
 
-# Work Experience
 
-## Employements
-
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
 
 ## Internships
 
@@ -25,10 +19,12 @@ sidebar: false
 
 2.  TAI, Summer Intern, 2023
 
-# Projects
+
 
 # Competencies
 
 R, Quarto, Git, Python
 
 # Hobbies
+
+Cinema, Reading, Playing Piano
