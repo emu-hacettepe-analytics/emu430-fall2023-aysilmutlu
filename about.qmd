@@ -2,6 +2,7 @@
 title: "About Me"
 sidebar: false 
 ---
+
 # Resume
 
 You can find my CV [here](Ayşıl%20Mutlu%20-%20cv.pdf)
@@ -25,4 +26,3 @@ R, Quarto, Git, Python
 # Hobbies
 
 Drawing, Reading, Playing Piano
-
