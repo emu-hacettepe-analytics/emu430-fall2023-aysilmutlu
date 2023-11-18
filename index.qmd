@@ -3,10 +3,9 @@ title: "Welcome to My Analytics Lab"
 sidebar: false 
 ---
 
-Hello! My name is Ayşıl Mutlu.
+Hi! My name is Ayşıl Mutlu.
 
 This is my personal webpage.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
 
-This is our template.
