@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "[Ayşıl Mutlu/EMU430 Fall 23']'s Analytics Lab"
+  title: "Ayşıl Mutlu's Analytics Lab"
   navbar:
     search: true
     left:
