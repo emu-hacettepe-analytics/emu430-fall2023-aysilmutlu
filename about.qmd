@@ -5,7 +5,7 @@ sidebar: false
 
 # Resume
 
-You can find my CV [here](Ayşıl%20Mutlu%20-%20cv.pdf)
+You can find my CV [here](Ayşıl Mutlu Resume.pdf)
 
 # Education
 
