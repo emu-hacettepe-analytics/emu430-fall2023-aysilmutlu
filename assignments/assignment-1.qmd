@@ -8,15 +8,112 @@ title: "Assignment 1"
 1 + 1
 ```
 
-My first assignment has two parts.
+My first assignment has three parts.
 
 ## (a)
 
-I will give brief information about the video, which you can access [here](https://www.youtube.com/watch?v=ttLnLdU1-CQ).
+I will give brief information about the video, which you can access here:
 
-  The video begins with the expectations of Tracy Teal, an American bioinformatician and general manager of Data Carpentry, from her educational life. She says that one of the factors in choosing the department was to be able to deal with science without having to communicate with anyone, but then she realizes that just doing science is not enough and it is necessary to share the results she finds. In the words of Lewis Kirvan, 'Sometimes you just need words'. Se realizes that she can use writing to present her findings and that she enjoys it very much. However, preparing presentations is still an area that she is not excited about until she meets Quarto. After stating that Quarto makes this job fun, Tracy Teal gives an example. In addition to the ability to change the created page with code plug-ins from the software part called 'source'; changes made in the 'visual' part, that is, the part where the visual reflection of the coding is displayed, are also added to the 'source' part. She adds that it was very beneficial for her to be able to see the changes on the page synchronously after rendering the code she wrote. 
-  Another thing Tracy Teal liked about Quarto was the ease of visual editing. She mentions that editing visual additions is easy and usable, and that editing can be complicated depending on your time.
-  Another feature that makes things easier while preparing slides is the ability to add speaker notes. With Quarto, the person preparing the presentation can view the current page, the next page, the time, the time since the beginning and the notes she wrote for himself on the same page. Therefore, it helped her to explain what she wanted to say during the presentation more clearly. 
-  Stating that she has been giving trainings about data and its utilization for a long time, Tracy Teal talked about the visual effect of data in the field of scienctific communication; She mentions that with Quarto, both software, slides and figures are integrated in the same file, which provides ease of use. She added that when she looks at the code in the future, she does not waste time to reveal what she has done in the past, because all components can be accessed in the same code.
-  Another ease of use for her was the enjoyable themes.
+[Tracy Teal \| These are a few of my favorite things (about Quarto presentations) \| RStudio (2022)](https://www.youtube.com/watch?v=ttLnLdU1-CQ).
+
+The video begins with the expectations of Tracy Teal, an American bioinformatician and general manager of Data Carpentry, from her educational life. She says that one of the factors in choosing the department was to be able to deal with science without having to communicate with anyone, but then she realizes that just doing science is not enough and it is necessary to share the results she finds. In the words of Lewis Kirvan, 'Sometimes you just need words'. Se realizes that she can use writing to present her findings and that she enjoys it very much. However, preparing presentations is still an area that she is not excited about until she meets Quarto. After stating that Quarto makes this job fun, Tracy Teal gives an example. In addition to the ability to change the created page with code plug-ins from the software part called 'source'; changes made in the 'visual' part, that is, the part where the visual reflection of the coding is displayed, are also added to the 'source' part. She adds that it was very beneficial for her to be able to see the changes on the page synchronously after rendering the code she wrote.
+
+Another thing Tracy Teal liked about Quarto was the ease of visual editing. She mentions that editing visual additions is easy and usable, and that editing can be complicated depending on your time.
+
+Another feature that makes things easier while preparing slides is the ability to add speaker notes. With Quarto, the person preparing the presentation can view the current page, the next page, the time, the time since the beginning and the notes she wrote for himself on the same page. Therefore, it helped her to explain what she wanted to say during the presentation more clearly.
+
+Stating that she has been giving training about data and its utilization for a long time, Tracy Teal talked about the visual effect of data in the field of scientific communication; She mentions that with Quarto, both software, slides and figures are integrated in the same file, which provides ease of use. She added that when she looks at the code in the future, she does not waste time to reveal what she has done in the past, because all components can be accessed in the same code.
+
+Another ease of use for her was the enjoyable themes.She mentions that we can use whatever we want among the built-in themes and that we can change the theme of the entire presentation with a single line, instead of dealing with each page separately. Or, if you want, you can create your own custom themes.
+
+Another useful feature is that the created document can be shared in the desired format, for example html, pdf or PowerPoint. She adds that editing the coding, images and format in a single file makes it easier to understand when looking back.
+
+Finally, Tracy Teal ends her presentation by adding that you can get information on Quarto and GitHub to learn more tips. Sites we can use when preparing a presentation:
+
+[Quarto link](https://quarto.org/docs/presentations/)
+
+[GitHub link of Tracy Teal's page](https://github.com/tracykteal/rstudioconf-quarto-presentation)
+
 ## (b)
+
+In this part, the differences between the two coding languages R and Python will be discussed.
+
+1)  I think the most basic differences are the syntaxes used when assigning values to variables. Let's say we want to assign values to x and y variables and then print the sum of these values.
+
+For Python:
+
+```{python, python.reticulate = FALSE}
+x = 8
+y = 4
+sum = x + y
+print("The sum is", sum)
+```
+
+For R:
+
+```{r}
+x <- 8
+y <- 4
+sum <- x + y
+print(paste("The sum is", sum))
+```
+
+2)  Another distinction is the difference in the formats used in function presentation. Let's say we want to write a function that can output the average of two variables entered into the function.
+
+For Python:
+
+```{python, python.reticulate = FALSE}
+def average_finding(x,y):
+  sum = x + y
+  avg = sum/2
+  print("The average is", avg)
+
+average_finding(8,4)
+```
+
+For R:
+
+```{r}
+average_finding <- function(x,y){
+  sum <- x + y
+  avg <- sum/2
+  return(c("The average is", avg))
+}
+average_finding(8,4)
+```
+
+3)  Another difference arises in vector operations. Let's consider a simple task of creating a list or vector of numbers, squaring each element, and then calculating the sum of the squared values.
+
+For Python:
+
+```{python, python.reticulate = FALSE}
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [x**2 for x in numbers]
+sum_squared = sum(squared_numbers)
+print(sum_squared)
+```
+
+For R:
+
+```{r}
+numbers <- c(1, 2, 3, 4, 5)
+squared_numbers <- numbers^2
+sum_squared <- sum(squared_numbers)
+print(sum_squared)
+```
+
+## (c)
+
+In this part, after importing the "na_example" dataset from the dslabs package, we will replace all NA values in the "na_example" dataset with 0 and save it as a new object.
+
+```{r}
+library(dslabs)
+data("na_example")
+na_example
+# Total number of NAs in the data frame:
+sum(is.na(na_example))
+no_na_example <- ifelse(is.na(na_example), 0, na_example)
+no_na_example
+# Total number of NAs in the new data frame:
+sum(is.na(no_na_example))
+```
